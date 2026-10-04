@@ -12,7 +12,7 @@ I build AI systems and the data pipelines under them, then measure both against 
 
 | Project | Role it shows | Result |
 |---|---|---|
-| **[Toko Marcell](https://github.com/marknshoot/toko-marcell)** · [live](https://toko-marcell.vercel.app) | AI Engineer | Fine-tuned CLIP (LoRA) on 5,378 fashion image–text pairs: **Recall@1 26.5% → 39.2%** on 539 held-out pairs. Hybrid BM25 + dense + image search in pgvector, a cross-encoder reranker, and a LangChain sales copilot. |
+| **[Toko Marcell](https://github.com/marknshoot/toko-marcell)** · [live](https://toko-marcell.vercel.app) | AI Engineer | Fine-tuned CLIP on 5,378 fashion image–text pairs (4 strategies compared; decoupled-LR fine-tune won): **Recall@1 26.5% → 39.2%** on 539 held-out pairs. Hybrid BM25 + dense + image search in pgvector and a grounded LangChain shopping copilot. |
 | **[Telco churn](https://github.com/marknshoot/telco-churn)** | Data Scientist | Six retention strategies costed in dollars on 986 held-out customers. A cost-chosen threshold spends **18.3% less** than discounting everyone, and the notebook says where a one-line rule wins. |
 | **[ShopStream](https://github.com/marknshoot/data-pipeline)** | Data Engineer | End-to-end marketplace pipeline: Postgres + Kafka → S3 lake → Spark → dbt on ClickHouse → Metabase, orchestrated by Airflow. Star schema with SCD2, **125 dbt tests**, 101 source↔warehouse row-count checks, and a `SIGKILL` test showing **0 events lost** by the at-least-once consumer. CI runs a real `dbt build`. |
 
